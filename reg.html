@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>New Employee Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="container jumbotron text-center">
+        <h2>Registration Form</h2><br>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Register</button>
+  </div>
+
+  <div class="modal fade" role="dialog" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background: #17a2b8">
+            <h4 class="text-center modal-title text-uppercase" id="loginModal" style="color:white;text-align:center;margin:10px;">Binplus Learning Center</h4><br>
+          </div>
+
+          <div class="modal-body">
+            <section>
+              <div class="container">
+              <h2>New Employee Registration</h2><br>
+              <form action="#">
+                <h5>Personal Information:</h5>
+                <div class="row">
+                  <div class="col-md-12">
+                <div class="form-group">
+                    <label for="name">Employee Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+                </div></div>
+                <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">E-Mail:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                </div>
+                </div>
+                <div class="col-md-6">
+                <div class="form-group">
+                    <label for="date">Birth Date:</label>
+                    <input type="date" class="form-control" id="date" placeholder="Enter birthdate" name="date" required>
+                </div></div>
+                <div class="col-md-6">
+                <div class="form-group">
+                    <label for="mob">Contact No:</label>
+                    <input type="tel" class="form-control" id="mob" placeholder="Enter contact no." name="mob" required>
+                </div></div>
+              </div>
+                
+                <br>
+                <h5>Upload Documents:</h5>
+                <div class="form-group">
+                    <label for="pan">PAN Card:</label>
+                    <input type="file" class="form-control" id="pan" placeholder="Upload Pan card" name="pan" required>
+                </div>
+                <div class="form-group">
+                    <label for="pic">Photo:</label>
+                    <input type="file" class="form-control" id="pic" placeholder="Upload your photo" name="pic" required>
+                </div>
+                <div class="form-group">
+                    <label for="aadhaar">Aadhaar Card:</label>
+                    <input type="file" class="form-control" id="aadhaar" placeholder="Upload Aadhaar card" name="Aadhaar" required>
+                </div>
+
+                <br><h5>Your Data Privacy:</h5>
+                <p>Binplus is committed to protecting your information security.Your information will be used in accordance with any applicable data privacy law, our internal policies and our privacy policy and will be held security. 
+                </p>
+                <input type="checkbox" style="height:15px;width:15px;">&nbsp;I have read and accepted the <a href="#">Terms and Conditions</a>&nbsp;of the company.
+
+                <br><br><center><button type="submit" class="btn btn-primary">Register Now</button></center>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+
+</body>
+</html>
